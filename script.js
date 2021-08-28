@@ -27,7 +27,9 @@ const showCountry = () => {
 
 const getCountries = async () => {
     const res = await fetch('https://restcountries.eu/rest/v2/all');
-    countries = await res.json();  
+    const countriesArray = await res.json(); 
+
+    countries = countriesArray.filter(country => country.capital);
 }
 
 const getRandomCountry = () => {
