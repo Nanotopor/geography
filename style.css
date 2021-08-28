@@ -1,0 +1,148 @@
+*{
+    font-family: Montserrat;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+button {
+    border-radius: 5px;
+}
+
+.first-page {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.first-page img {
+    margin: 0;  
+    width: 40vw;
+}
+
+.first-page button {
+    color:rgb(46, 45, 45);
+    background-color: rgb(18, 233, 215);
+    border: 2px solid rgb(46, 45, 45);
+    padding: 1vw 10vw;
+    font-size: 2vw;
+    font-weight: 600;
+}
+
+.game {
+    display: none;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+hr{
+    height: 2px;
+    width: 28vw;
+    border: none;
+    background-color: red;
+}
+
+.country {
+    margin: 0;
+    width: 80%;
+    text-align: center;
+}
+
+.flag {    
+    width: 28vw;
+    margin: 3vw 0;
+    box-shadow:  0px 0px 32px 3px rgba(67, 85, 99, 0.27);
+}
+
+.form {
+    width: 30vw;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+    /*flex-wrap: wrap;  */
+}
+
+/*.radio-button input {
+    padding: 0;
+    width: 5vw;
+    height: 2vw;
+}*/
+
+.radio-button  {
+	display: inline-block;
+    width: 90%;
+	margin: 3px 10px;
+}
+.radio-button [type=radio] {
+	display: none;
+}
+.radio-button label {
+	display: inline-block;
+	cursor: pointer;
+	/*padding: 2px 20px;*/
+    width: 100%; 
+    height: 4vw;
+    text-align: center;
+	line-height: 34px;
+	border: 1px solid #999;
+	border-radius: 6px;
+	user-select: none;
+}
+
+.radio-button input[type=radio]:checked + label {
+	background: #ecf5f7;
+}
+
+.game button {
+    padding: 0 7vw;
+    font-size: 3vw;
+    font-weight: 500;
+    margin-top: 3vw;
+}
+
+@media screen and (max-width: 800px){  
+    .first-page img {
+        margin-bottom: 10vh; 
+        width: 100%;
+    }
+    .first-page button {
+        padding: 1vh 6vh;
+        font-size: 5vh;
+        font-weight: 700;
+    }
+    hr{
+        height: 2px;
+        width: 80%;
+    }
+    .country {
+        margin: 2vh 0;
+    }
+    .flag {    
+        width: 70%;
+        margin: 3vh 0;
+        box-shadow:  0px 0px 32px 3px rgba(67, 85, 99, 0.27);
+    }
+    .form {
+        width: 70%;
+    }
+    .radio-button label {
+        height: 6vh;
+        line-height: 40px;
+        border-radius: 3px;
+    }
+    .game button {
+        color:rgb(46, 45, 45);
+        background-color: rgb(18, 233, 215);
+        border: 2px solid rgb(46, 45, 45);
+        padding: 1vh 7vh;
+        font-size: 3vh;
+        font-weight: 600;
+        margin: 4vh 0;
+    }
+}
